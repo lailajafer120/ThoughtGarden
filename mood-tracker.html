@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker - ThoughtGarden</title>
+    <link rel="stylesheet" href="mood.css">
+    <link rel="stylesheet" href="responsive.css">
+   
+
+   
+    
+</head>
+<body>
+
+<div class="left-panel"></div>
+<div class="right-panel"></div>
+ 
+    <header>
+        <h1>Mood Tracker</h1>
+        <p>"Pause, Reflect, Grow"</p>
+    </header>
+
+ 
+    <section class="intro">
+        <p>The Mood Tracker is your simple daily check-in—a gentle pause to notice how you’re feeling and why. By choosing an emotion and reflecting, you begin to understand your patterns, triggers, and moments of joy. Over time, these small check-ins help you build emotional awareness, manage stress, and stay connected to yourself with honesty and kindness. Every feeling is valid, and every mood tells a story worth understanding.</p>
+    </section>
+
+  
+    <section class="mood-selection">
+        <h2>How are you feeling today?</h2>
+        <p>Select your mood:</p>
+        <div class="emoji-container">
+            <span class="emoji" data-mood="happy">😄</span>
+            <span class="emoji" data-mood="content">🙂</span>
+            <span class="emoji" data-mood="neutral">😐</span>
+            <span class="emoji" data-mood="sad">😔</span>
+            <span class="emoji" data-mood="angry">😡</span>
+        </div>
+        <p id="mood-response"></p>
+    </section>
+
+   
+    <section class="reflection">
+        <label for="activity">What were you doing when you felt this?</label>
+        <textarea id="activity" class="reflection-textarea" rows="6"></textarea>
+
+        <label for="cause">Describe what might be causing you to feel this way</label>
+        <textarea id="cause" class="reflection-textarea" rows="6"></textarea>
+    </section> 
+    <button id="save-btn" class="save-button">Save Reflections</button>
+<p id="save-status" class="save-status"></p>
+
+
+  
+    <footer>
+        <p>© 2025 ThoughtGarden. Pause. Reflect. Grow.</p>
+    </footer>
+ <script src="mood.js"></script>
+</body>
+</html>

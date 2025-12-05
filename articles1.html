@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles - ThoughtGarden</title>
+<link rel="stylesheet" href="responsive.css">
+</head>
+<head>
+<style>
+
+:root {
+    --primary-green: #4CAF91;
+    --soft-blue: #A3D2F2;
+    --lavender-purple: #9C7CCC;
+    --white: #FFFFFF;
+    --text-color: #333333;
+    --light-shadow: rgba(0,0,0,0.08);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom right, var(--soft-blue), var(--white));
+    color: var(--text-color);
+}
+
+.left-panel, .right-panel {
+    position: fixed;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background-color: var(--primary-green);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.left-panel { left: 0; }
+.right-panel { right: 0; }
+
+
+.articles-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.articles-section h2 {
+    text-align: center;
+    color: var(--lavender-purple);
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+.section-intro {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.article-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px var(--light-shadow);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px var(--light-shadow);
+}
+
+.article-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content h3 {
+    color: var(--primary-green);
+    margin-top: 0;
+}
+
+.article-content p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-green);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: var(--lavender-purple);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--soft-blue);
+    color: var(--white);
+    font-weight: bold;
+    margin-top: 40px;
+    border-top: 2px solid var(--lavender-purple);
+}
+
+</style>
+</head>
+<body>
+
+<div class="left-panel"></div>
+<div class="right-panel"></div>
+
+<section id="articles" class="articles-section">
+    <h2>Featured Articles</h2>
+    <p class="section-intro">
+        Explore meaningful short reads on wellbeing, productivity, emotions, and everyday life.
+    </p>
+
+    <div class="articles-container">
+
+      
+        <article class="article-card">
+            <img src="fatigue.png" alt="Decision Fatigue">
+            <div class="article-content">
+                <h3>What is Decision Fatigue?</h3>
+                <p>Learn how making too many choices drains your mental energy and practical tips to protect your mind.</p>
+                <a href="https://medium.com/design-bootcamp/decision-fatigue-the-hidden-enemy-of-user-experience-f62c061d5156" 
+   class="read-more" target="_blank">
+   Read Article →
+</a>
+
+            </div>
+        </article>
+
+     
+        <article class="article-card">
+            <img src="overwhelm.png" alt="Emotional Overwhelm">
+            <div class="article-content">
+                <h3>How to Calm Emotional Overwhelm</h3>
+                <p>A simple guide that helps you break emotional chaos into small, manageable steps.</p>
+                <a href="https://www.talkspace.com/mental-health/conditions/articles/feeling-overwhelmed/" 
+   class="read-more" target="_blank">
+   Read Article →
+</a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img src="boundaries.png" alt="Setting Boundaries">
+            <div class="article-content">
+                <h3>The Art of Setting Healthy Boundaries</h3>
+                <p>Learn how to say no with confidence and protect your peace without feeling guilty.</p>
+                <a href="https://www.claritytherapynyc.com/the-art-of-setting-boundaries/" 
+   class="read-more" target="_blank">
+   Read Article →
+</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card">
+            <img src="detox.png" alt="Screen Detox">
+            <div class="article-content">
+                <h3>Why Your Brain Needs a Screen Detox</h3>
+                <p>Understand how digital noise affects your mood and steps to rebalance your mind.</p>
+                <a href="https://www.brownhealth.org/be-well/what-digital-detox-and-do-you-need-one" 
+   class="read-more" target="_blank">
+   Read Article →
+</a>
+            </div>
+        </article>
+
+       
+        <article class="article-card">
+            <img src="setbacks.png" alt="Self Worth">
+            <div class="article-content">
+                <h3>Rebuilding Self-Worth After Setbacks</h3>
+                <p>A gentle reminder that growth is not always visible, but always happening.</p>
+                <a href="https://ssiministries.org/turning-setbacks-into-comebacks/?gad_source=1&gad_campaignid=23263875801&gbraid=0AAAABANeOrFPbvOIazbt_vpC_igtxKP8L&gclid=Cj0KCQiAubrJBhCbARIsAHIdxD9h7LflFyb6gU_i9XC_c92vEWmKGzn_CiRqvYU7ngFgSvxIZeVHVdgaAgggEALw_wcB" 
+   class="read-more" target="_blank">
+   Read Article →
+</a>
+            </div>
+        </article>
+
+      
+        <article class="article-card">
+            <img src="sleep.png" alt="Sleep Habits">
+            <div class="article-content">
+                <h3>How Better Sleep Improves Your Mood</h3>
+                <p>Small changes that help your body recharge, reduce anxiety, and improve mental clarity.</p>
+                <a href="https://sleep.hms.harvard.edu/education-training/public-education/sleep-and-health-education-program/sleep-health-education-87" 
+   class="read-more" target="_blank">
+   Read Article →
+</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 ThoughtGarden. Pause. Reflect. Grow.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Journal</title>
+    <link rel="stylesheet" href="journaling.css"> 
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<style>
+    .left-panel, .right-panel {
+    position: fixed;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #34946f; 
+    z-index: -1;
+}
+
+.left-panel { left: 0; }
+.right-panel { right: 0; }
+
+</style>
+<body>
+  
+<div class="left-panel"></div>
+<div class="right-panel"></div>
+  
+    <header>
+        <h1>My Daily Journal</h1>
+        <p>"Pause, Reflect, Grow"</p>
+    </header>
+
+
+    <section id="journal-section">
+        <label for="gratitude1">Today I am grateful for:</label>
+        <textarea name="gratitude1" class="journal-textarea" id="gratitude1" cols="90" rows="8"></textarea>
+
+        <label for="gratitude2">One thing I learnt today:</label>
+        <textarea name="gratitude2" class="journal-textarea" id="gratitude2" cols="90" rows="8"></textarea>
+
+        <label for="gratitude3">Something I want to improve tomorrow:</label>
+        <textarea name="gratitude3" class="journal-textarea" id="gratitude3" cols="90" rows="8"></textarea>
+
+        <label for="gratitude4">A moment that made me smile today:</label>
+        <textarea name="gratitude4" class="journal-textarea" id="gratitude4" cols="90" rows="8"></textarea>
+    </section>
+<button id="save-journal" class="save-button">Save Journal</button>
+<p id="save-message" class="save-status"></p>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 ThoughtGarden. Pause. Reflect. Grow.</p>
+        </div>
+    </footer>
+    <script src="journaling .JS"></script>
+</body>
+</html>

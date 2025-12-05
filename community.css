@@ -1,0 +1,153 @@
+
+:root {
+    --primary-green: #4CAF91;
+    --soft-blue: #A3D2F2;
+    --lavender-purple: #9C7CCC;
+    --white: #FFFFFF;
+    --text-color: #333333;
+    --light-shadow: rgba(0,0,0,0.08);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom right, var(--soft-blue), var(--white));
+    color: var(--text-color);
+}
+
+
+.community-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.6);
+    border-bottom: 2px solid var(--lavender-purple);
+}
+
+.community-header h1 {
+    font-size: 2.5rem;
+    color: var(--lavender-purple);
+    margin-bottom: 10px;
+}
+
+.community-header p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+
+.whatsapp-section {
+    text-align: center;
+    margin: 50px 20px;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px var(--light-shadow);
+}
+
+.whatsapp-section h2 {
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.whatsapp-section p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: var(--lavender-purple);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.whatsapp-btn:hover {
+    background-color: var(--primary-green);
+    transform: scale(1.05);
+}
+
+
+.community-form-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px var(--light-shadow);
+}
+
+.community-form-section h2 {
+    color: var(--lavender-purple);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.community-form-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.community-form .form-group {
+    margin-bottom: 20px;
+}
+
+.community-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+.community-form input,
+.community-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.community-form input:focus,
+.community-form textarea:focus {
+    outline: none;
+    border-color: var(--lavender-purple);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: var(--lavender-purple);
+    transform: scale(1.03);
+}
+
+
+.community-footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--soft-blue);
+    color: var(--white);
+    font-weight: bold;
+    border-top: 2px solid var(--lavender-purple);
+}
